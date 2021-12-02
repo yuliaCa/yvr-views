@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './NewMeetup.module.css';
+import styles from './Viewpoint.module.css';
 import Card from '../ui/Card';
 import { useRef } from 'react';
 

@@ -12174,7 +12174,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewMeetup.module.css */ "./src/components/viewpoints/NewMeetup.module.css");
+/* harmony import */ var _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Viewpoint.module.css */ "./src/components/viewpoints/Viewpoint.module.css");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.js");
 
 
@@ -12203,38 +12203,38 @@ function NewViewpoint(props) {
   }
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].form,
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].form,
     onSubmit: submitHandler
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "New Viewpoint title", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
     required: true,
     id: "name",
     ref: titleInputRef
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "New Viewpoint Image", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "url",
     required: true,
     id: "image",
     ref: ImageInputRef
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "New Viewpoint Address", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "text",
     required: true,
     id: "address",
     ref: AddressInputRef
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].control
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "New Viewpoint Description", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", {
     id: "description",
     required: true,
     rows: "5",
     ref: DescInputRef
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].actions
+    className: _Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].actions
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Save the Viewpoint"))));
 }
 
@@ -12254,7 +12254,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MeetupItem.module.css */ "./src/components/viewpoints/MeetupItem.module.css");
+/* harmony import */ var _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewpointItem.module.css */ "./src/components/viewpoints/ViewpointItem.module.css");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.js");
 /* harmony import */ var _store_favorites_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/favorites-context */ "./src/store/favorites-context.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -12288,16 +12288,16 @@ function ViewpointItem(props) {
 
   var itemIsFav = favContext.itemIsFav(props.id);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    className: _MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].item
+    className: _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].item
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ui_Card__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image
+    className: _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: props.image,
     alt: props.title
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].content
+    className: _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].content
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("address", null, props.address), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, props.description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].actions
+    className: _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].actions
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     onClick: function onClick(event) {
       return toggleFavBtnHandler(event);
@@ -12322,14 +12322,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _ViewpointItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewpointItem */ "./src/components/viewpoints/ViewpointItem.js");
-/* harmony import */ var _MeetupList_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MeetupList.module.css */ "./src/components/viewpoints/MeetupList.module.css");
+/* harmony import */ var _ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ViewpointList.module.css */ "./src/components/viewpoints/ViewpointList.module.css");
 
 
 
 
 function ViewpointsList(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    className: _MeetupList_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].list
+    className: _ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].list
   }, props.viewpoints.map(function (viewpoint) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ViewpointItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: viewpoint._id,
@@ -12725,72 +12725,9 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupItem.module.css":
-/*!***********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupItem.module.css ***!
-  \***********************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "._94xfdbopdxvnL8fy4stDMA\\=\\= {\n  margin: 1rem 0;\n}\n\n.A0V5CUSbNJSxkGloUny00g\\=\\= {\n  width: 100%;\n  height: 20rem;\n  overflow: hidden;\n  border-top-right-radius: 6px;\n  border-top-left-radius: 6px;\n}\n\n.A0V5CUSbNJSxkGloUny00g\\=\\= img {\n  width: 100%;\n  object-fit: cover;\n}\n\n._2Or6\\+u5ID7CZt5Y-HRkoHg\\=\\= {\n  text-align: center;\n  padding: 1rem;\n}\n\n._2Or6\\+u5ID7CZt5Y-HRkoHg\\=\\= h3 {\n  font-size: 1.25rem;\n  color: #2c292b;\n}\n\n.FqhcD6gHxHpKLyh2x1v21Q\\=\\= {\n  padding: 1.5rem;\n  text-align: center;\n}\n\n.FqhcD6gHxHpKLyh2x1v21Q\\=\\= button {\n  font: inherit;\n  cursor: pointer;\n  color: #0a7d81;\n  border: 1px solid #0a7d81;\n  background-color: transparent;\n  padding: 0.5rem 1.5rem;\n  border-radius: 4px;\n}\n\n.FqhcD6gHxHpKLyh2x1v21Q\\=\\= button:hover,\n.FqhcD6gHxHpKLyh2x1v21Q\\=\\= button:active {\n  background-color: #d3f3f4;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/MeetupItem.module.css"],"names":[],"mappings":"AAAA;EACE,cAAc;AAChB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,gBAAgB;EAChB,4BAA4B;EAC5B,2BAA2B;AAC7B;;AAEA;EACE,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,cAAc;EACd,yBAAyB;EACzB,6BAA6B;EAC7B,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA;;EAEE,yBAAyB;AAC3B","sourcesContent":[".item {\n  margin: 1rem 0;\n}\n\n.image {\n  width: 100%;\n  height: 20rem;\n  overflow: hidden;\n  border-top-right-radius: 6px;\n  border-top-left-radius: 6px;\n}\n\n.image img {\n  width: 100%;\n  object-fit: cover;\n}\n\n.content {\n  text-align: center;\n  padding: 1rem;\n}\n\n.content h3 {\n  font-size: 1.25rem;\n  color: #2c292b;\n}\n\n.actions {\n  padding: 1.5rem;\n  text-align: center;\n}\n\n.actions button {\n  font: inherit;\n  cursor: pointer;\n  color: #0a7d81;\n  border: 1px solid #0a7d81;\n  background-color: transparent;\n  padding: 0.5rem 1.5rem;\n  border-radius: 4px;\n}\n\n.actions button:hover,\n.actions button:active {\n  background-color: #d3f3f4;\n}\n"],"sourceRoot":""}]);
-// Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"item": "_94xfdbopdxvnL8fy4stDMA==",
-	"image": "A0V5CUSbNJSxkGloUny00g==",
-	"content": "_2Or6+u5ID7CZt5Y-HRkoHg==",
-	"actions": "FqhcD6gHxHpKLyh2x1v21Q=="
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupList.module.css":
-/*!***********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupList.module.css ***!
-  \***********************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ".hxLix76WTFNEnPTL5YiHsQ\\=\\= {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/MeetupList.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,SAAS;EACT,UAAU;AACZ","sourcesContent":[".list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n"],"sourceRoot":""}]);
-// Exports
-___CSS_LOADER_EXPORT___.locals = {
-	"list": "hxLix76WTFNEnPTL5YiHsQ=="
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/NewMeetup.module.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/Viewpoint.module.css":
 /*!**********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/NewMeetup.module.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/Viewpoint.module.css ***!
   \**********************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -12808,12 +12745,75 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".yxhhSPNGpavq5ePkzkmzlg\\=\\= {\n  padding: 1rem;\n}\n\n._0iCqiQv2p6Mq9m06ZFas3g\\=\\= {\n  margin-bottom: 0.5rem;\n}\n\n._0iCqiQv2p6Mq9m06ZFas3g\\=\\= label {\n  display: block;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n}\n\n._0iCqiQv2p6Mq9m06ZFas3g\\=\\= input,\n._0iCqiQv2p6Mq9m06ZFas3g\\=\\= textarea {\n  display: block;\n  font: inherit;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 0.25rem;\n  width: 100%;\n}\n\n._2L6wcGANo6nPDCnm72Gl7A\\=\\= {\n  margin-top: 1rem;\n  text-align: right;\n}\n\n._2L6wcGANo6nPDCnm72Gl7A\\=\\= button {\n  font: inherit;\n  cursor: pointer;\n  background-color: #77002e;\n  color: white;\n  padding: 0.5rem 1.5rem;\n  border: 1px solid #77002e;\n  border-radius: 4px;\n  font-weight: bold;\n}\n\n._2L6wcGANo6nPDCnm72Gl7A\\=\\= button:hover,\n._2L6wcGANo6nPDCnm72Gl7A\\=\\= button:active {\n  background-color: #a50e48;\n  border-color: #a50e48;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/NewMeetup.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;EACd,iBAAiB;EACjB,qBAAqB;AACvB;;AAEA;;EAEE,cAAc;EACd,aAAa;EACb,kBAAkB;EAClB,sBAAsB;EACtB,gBAAgB;EAChB,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,yBAAyB;EACzB,YAAY;EACZ,sBAAsB;EACtB,yBAAyB;EACzB,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;;EAEE,yBAAyB;EACzB,qBAAqB;AACvB","sourcesContent":[".form {\n  padding: 1rem;\n}\n\n.control {\n  margin-bottom: 0.5rem;\n}\n\n.control label {\n  display: block;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n}\n\n.control input,\n.control textarea {\n  display: block;\n  font: inherit;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 0.25rem;\n  width: 100%;\n}\n\n.actions {\n  margin-top: 1rem;\n  text-align: right;\n}\n\n.actions button {\n  font: inherit;\n  cursor: pointer;\n  background-color: #77002e;\n  color: white;\n  padding: 0.5rem 1.5rem;\n  border: 1px solid #77002e;\n  border-radius: 4px;\n  font-weight: bold;\n}\n\n.actions button:hover,\n.actions button:active {\n  background-color: #a50e48;\n  border-color: #a50e48;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".NOGaB2u8Y6lyjG0qU2QcUw\\=\\= {\n  padding: 1rem;\n}\n\n._9ODvcI3cCeyCs2OG4SGtWg\\=\\= {\n  margin-bottom: 0.5rem;\n}\n\n._9ODvcI3cCeyCs2OG4SGtWg\\=\\= label {\n  display: block;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n}\n\n._9ODvcI3cCeyCs2OG4SGtWg\\=\\= input,\n._9ODvcI3cCeyCs2OG4SGtWg\\=\\= textarea {\n  display: block;\n  font: inherit;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 0.25rem;\n  width: 100%;\n}\n\n.ueP16JCHmgZ-VZ3LSujuPg\\=\\= {\n  margin-top: 1rem;\n  text-align: right;\n}\n\n.ueP16JCHmgZ-VZ3LSujuPg\\=\\= button {\n  font: inherit;\n  cursor: pointer;\n  background-color: #0a7d81;\n  color: white;\n  padding: 0.5rem 1.5rem;\n  border: 1px solid #0a7d81;\n  border-radius: 4px;\n  font-weight: bold;\n}\n\n.ueP16JCHmgZ-VZ3LSujuPg\\=\\= button:hover,\n.ueP16JCHmgZ-VZ3LSujuPg\\=\\= button:active {\n  background-color: #0a7d81;\n  border-color: #0a7d81;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/Viewpoint.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;EACd,iBAAiB;EACjB,qBAAqB;AACvB;;AAEA;;EAEE,cAAc;EACd,aAAa;EACb,kBAAkB;EAClB,sBAAsB;EACtB,gBAAgB;EAChB,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,yBAAyB;EACzB,YAAY;EACZ,sBAAsB;EACtB,yBAAyB;EACzB,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;;EAEE,yBAAyB;EACzB,qBAAqB;AACvB","sourcesContent":[".form {\n  padding: 1rem;\n}\n\n.control {\n  margin-bottom: 0.5rem;\n}\n\n.control label {\n  display: block;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n}\n\n.control input,\n.control textarea {\n  display: block;\n  font: inherit;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  padding: 0.25rem;\n  width: 100%;\n}\n\n.actions {\n  margin-top: 1rem;\n  text-align: right;\n}\n\n.actions button {\n  font: inherit;\n  cursor: pointer;\n  background-color: #0a7d81;\n  color: white;\n  padding: 0.5rem 1.5rem;\n  border: 1px solid #0a7d81;\n  border-radius: 4px;\n  font-weight: bold;\n}\n\n.actions button:hover,\n.actions button:active {\n  background-color: #0a7d81;\n  border-color: #0a7d81;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"form": "yxhhSPNGpavq5ePkzkmzlg==",
-	"control": "_0iCqiQv2p6Mq9m06ZFas3g==",
-	"actions": "_2L6wcGANo6nPDCnm72Gl7A=="
+	"form": "NOGaB2u8Y6lyjG0qU2QcUw==",
+	"control": "_9ODvcI3cCeyCs2OG4SGtWg==",
+	"actions": "ueP16JCHmgZ-VZ3LSujuPg=="
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointItem.module.css":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointItem.module.css ***!
+  \**************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".C5GmpjAJwY1yCzZe8cd7WA\\=\\= {\n  margin: 1rem 0;\n}\n\n.PZCBLAtAhnmGlvFcnWdHXw\\=\\= {\n  width: 100%;\n  height: 20rem;\n  overflow: hidden;\n  border-top-right-radius: 6px;\n  border-top-left-radius: 6px;\n}\n\n.PZCBLAtAhnmGlvFcnWdHXw\\=\\= img {\n  width: 100%;\n  object-fit: cover;\n}\n\n.DJLLdhwGf5umNyNTnt3Fyg\\=\\= {\n  text-align: center;\n  padding: 1rem;\n}\n\n.DJLLdhwGf5umNyNTnt3Fyg\\=\\= h3 {\n  font-size: 1.25rem;\n  color: #2c292b;\n}\n\n.\\+1qc4\\+3DOVHHVDnRxi0qDw\\=\\= {\n  padding: 1.5rem;\n  text-align: center;\n}\n\n.\\+1qc4\\+3DOVHHVDnRxi0qDw\\=\\= button {\n  font: inherit;\n  cursor: pointer;\n  color: #0a7d81;\n  border: 1px solid #0a7d81;\n  background-color: transparent;\n  padding: 0.5rem 1.5rem;\n  border-radius: 4px;\n}\n\n.\\+1qc4\\+3DOVHHVDnRxi0qDw\\=\\= button:hover,\n.\\+1qc4\\+3DOVHHVDnRxi0qDw\\=\\= button:active {\n  background-color: #d3f3f4;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/ViewpointItem.module.css"],"names":[],"mappings":"AAAA;EACE,cAAc;AAChB;;AAEA;EACE,WAAW;EACX,aAAa;EACb,gBAAgB;EAChB,4BAA4B;EAC5B,2BAA2B;AAC7B;;AAEA;EACE,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,cAAc;EACd,yBAAyB;EACzB,6BAA6B;EAC7B,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA;;EAEE,yBAAyB;AAC3B","sourcesContent":[".item {\n  margin: 1rem 0;\n}\n\n.image {\n  width: 100%;\n  height: 20rem;\n  overflow: hidden;\n  border-top-right-radius: 6px;\n  border-top-left-radius: 6px;\n}\n\n.image img {\n  width: 100%;\n  object-fit: cover;\n}\n\n.content {\n  text-align: center;\n  padding: 1rem;\n}\n\n.content h3 {\n  font-size: 1.25rem;\n  color: #2c292b;\n}\n\n.actions {\n  padding: 1.5rem;\n  text-align: center;\n}\n\n.actions button {\n  font: inherit;\n  cursor: pointer;\n  color: #0a7d81;\n  border: 1px solid #0a7d81;\n  background-color: transparent;\n  padding: 0.5rem 1.5rem;\n  border-radius: 4px;\n}\n\n.actions button:hover,\n.actions button:active {\n  background-color: #d3f3f4;\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"item": "C5GmpjAJwY1yCzZe8cd7WA==",
+	"image": "PZCBLAtAhnmGlvFcnWdHXw==",
+	"content": "DJLLdhwGf5umNyNTnt3Fyg==",
+	"actions": "+1qc4+3DOVHHVDnRxi0qDw=="
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointList.module.css":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointList.module.css ***!
+  \**************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".qcKSwvA4tX-YXRp1ZLH0Mg\\=\\= {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n", "",{"version":3,"sources":["webpack://./src/components/viewpoints/ViewpointList.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,SAAS;EACT,UAAU;AACZ","sourcesContent":[".list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"list": "qcKSwvA4tX-YXRp1ZLH0Mg=="
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13067,119 +13067,9 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/components/viewpoints/MeetupItem.module.css":
-/*!*********************************************************!*\
-  !*** ./src/components/viewpoints/MeetupItem.module.css ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./MeetupItem.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupItem.module.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_MeetupItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/viewpoints/MeetupList.module.css":
-/*!*********************************************************!*\
-  !*** ./src/components/viewpoints/MeetupList.module.css ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_MeetupList_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./MeetupList.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/MeetupList.module.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_MeetupList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_MeetupList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_MeetupList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_MeetupList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/viewpoints/NewMeetup.module.css":
+/***/ "./src/components/viewpoints/Viewpoint.module.css":
 /*!********************************************************!*\
-  !*** ./src/components/viewpoints/NewMeetup.module.css ***!
+  !*** ./src/components/viewpoints/Viewpoint.module.css ***!
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -13200,7 +13090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./NewMeetup.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/NewMeetup.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./Viewpoint.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/Viewpoint.module.css");
 
       
       
@@ -13222,12 +13112,122 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_NewMeetup_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_Viewpoint_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/viewpoints/ViewpointItem.module.css":
+/*!************************************************************!*\
+  !*** ./src/components/viewpoints/ViewpointItem.module.css ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./ViewpointItem.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointItem.module.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/viewpoints/ViewpointList.module.css":
+/*!************************************************************!*\
+  !*** ./src/components/viewpoints/ViewpointList.module.css ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./ViewpointList.module.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/viewpoints/ViewpointList.module.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ViewpointList_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

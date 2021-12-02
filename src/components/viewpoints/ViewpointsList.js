@@ -1,6 +1,6 @@
 import React from 'react';
 import ViewpointItem from './ViewpointItem';
-import styles from './MeetupList.module.css';
+import styles from './ViewpointList.module.css';
 
 
 function ViewpointsList(props) {

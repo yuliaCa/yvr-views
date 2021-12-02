@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MeetupItem.module.css';
+import styles from './ViewpointItem.module.css';
 import Card from '../ui/Card';
 import { useContext } from 'react';
 import FavoritesContext from '../../store/favorites-context';
