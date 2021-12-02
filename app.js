@@ -10,7 +10,7 @@ connected
         const server = app.listen(8080, () => console.log("Listening"));
     });
 
-app.use(express.static(__dirname + "/public"));
+
 
 // app.set('view engine', 'ejs');
 
@@ -21,9 +21,10 @@ app.use(express.static(__dirname + "/public"));
 const router = require('./backend/routes/index');
 app.use('/api/v1', router);
 
+app.use(express.static(__dirname + "/public"));
 
 app.get('/*', function (req, res) {
-    res.sendFile('/public/index.html',
+    res.sendFile('public/index.html',
         function (err) {
             if (err) {
                 res.status(404).send(err)

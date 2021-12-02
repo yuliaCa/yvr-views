@@ -16,10 +16,10 @@ const App = () => {
                     <Route path='/' exact
                         element={<AllViewpointsPage />} />
 
-                    <Route path="new-viewpoint"
+                    <Route path="/new-viewpoint"
                         element={<NewViewpointPage />} />
 
-                    <Route path="favorites"
+                    <Route path="/favorites"
                         element={<FavoritesPage />} />
 
                 </Routes>

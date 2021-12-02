@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 function AllViewpointsPage() {
 
     const [isLoading, setIsLoading] = useState(true);
+
     const [loadedViewpoints, setloadedViewpoints] = useState([]);
 
     useEffect(() => {
@@ -17,7 +18,6 @@ function AllViewpointsPage() {
             }).then(data => {
 
                 const viewpoints = [];
-
                 for (let key in data) {
                     const viewpoint = {
                         id: key,
@@ -25,8 +25,6 @@ function AllViewpointsPage() {
                     }
                     viewpoints.push(viewpoint)
                 }
-
-
 
                 setIsLoading(false);
                 setloadedViewpoints(viewpoints);

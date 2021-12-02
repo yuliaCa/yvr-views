@@ -5,10 +5,6 @@ const { postViewpoint, getViewpoints } = require('../controllers/viewpointContro
 
 const { postFavorites, getFavorites, deleteFavorite } = require('../controllers/favoritesController.js')
 
-// router.use('/', getViewpoints)
-
-
-
 router.get('/allViewpoints', getViewpoints)
 
 router.post('/newViewpoint', postViewpoint)
