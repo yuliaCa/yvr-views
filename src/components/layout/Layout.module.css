@@ -8,3 +8,11 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
+footer {
+  background-color: #0a7d81;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  min-height: 4vh;
+}

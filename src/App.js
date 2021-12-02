@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import AllViewpointsPage from './pages/AllViewpoints';
 import NewViewpointPage from './pages/NewViewpoint';
 import FavoritesPage from './pages/Favorites';
+import Footer from './components/layout/Footer'
 import './App.css';
 
 const App = () => {
@@ -23,8 +24,8 @@ const App = () => {
                         element={<FavoritesPage />} />
 
                 </Routes>
-
             </Layout>
+            <Footer />
         </BrowserRouter>
     );
 }
