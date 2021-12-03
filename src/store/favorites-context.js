@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import { createContext, useState, useEffect } from 'react';
 
-let fetchedFavorites = [];
 
 
 const FavoritesContext = createContext({
@@ -35,10 +34,7 @@ export function FavoritesContextProvider(props) {
     }
 
     function removeFavHandler(favID) {
-        // setUserFavorites((prevFav) => {
-        //     return prevFav.filter(eachFav => eachFav.id !== favID)
-        // })
-        // console.log(favID)
+
         axios.delete(`/api/v1/favorites/${favID}`)
             .then(axios.get('/api/v1/favorites')
                 .then((results) => {

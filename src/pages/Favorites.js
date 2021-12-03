@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import FavoritesContext from '../store/favorites-context';
 import ViewpointsList from '../components/viewpoints/ViewpointsList';
 

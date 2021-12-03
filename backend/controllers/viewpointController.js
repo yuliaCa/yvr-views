@@ -8,7 +8,7 @@ const postViewpoint = (req, res) => {
         url: req.body.url,
         description: req.body.description
     });
-    console.log(req.body)
+
     viewpoint.save()
         .then(result => {
             res.set('content-location', `/allViewpoints/${viewpoint._id}`);
@@ -31,14 +31,6 @@ const getViewpoints = (req, res) => {
         .catch(error => res.status(500).send(error))
 
 }
-
-// const getTheLocation = (req, res) => {
-//     Location.findOne({ "_id": req.params.id }).exec()
-//         .then(results => {
-//             res.status(200).json(results)
-//         })
-//         .catch(error => res.status(500).send(error))
-// }
 
 module.exports = {
     postViewpoint,

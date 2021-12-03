@@ -9,7 +9,6 @@ function NewViewpointPage() {
         axios.post('/api/v1/newViewpoint', viewpointData)
             .then(() => {
                 navigate('/', { replace: true });
-                // this directs us to the root of the app after we submit the form.
             })
             .catch(error => console.log(error))
     }

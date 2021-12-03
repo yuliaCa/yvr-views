@@ -8,7 +8,7 @@ const postFavorites = (req, res) => {
         url: req.body.url,
         description: req.body.description
     });
-    console.log(req.body)
+
     viewpoint.save()
         .then(result => {
             res.set('content-location', `/favorites/${viewpoint._id}`);

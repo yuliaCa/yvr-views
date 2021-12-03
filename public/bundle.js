@@ -12257,11 +12257,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ViewpointItem_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewpointItem.module.css */ "./src/components/viewpoints/ViewpointItem.module.css");
 /* harmony import */ var _ui_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/Card */ "./src/components/ui/Card.js");
 /* harmony import */ var _store_favorites_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../store/favorites-context */ "./src/store/favorites-context.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _pages_Favorites__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/Favorites */ "./src/pages/Favorites.js");
-
-
 
 
 
@@ -12440,24 +12435,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _store_favorites_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/favorites-context */ "./src/store/favorites-context.js");
-/* harmony import */ var _components_viewpoints_ViewpointsList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/viewpoints/ViewpointsList */ "./src/components/viewpoints/ViewpointsList.js");
-
+/* harmony import */ var _store_favorites_context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store/favorites-context */ "./src/store/favorites-context.js");
+/* harmony import */ var _components_viewpoints_ViewpointsList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/viewpoints/ViewpointsList */ "./src/components/viewpoints/ViewpointsList.js");
 
 
 
 
 
 function FavoritesPage() {
-  var favContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_store_favorites_context__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  var favContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_store_favorites_context__WEBPACK_IMPORTED_MODULE_1__["default"]);
   var content;
 
   if (favContext.totalFavorites === 0) {
     content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "You have no favorites. Start adding some");
   } else {
-    content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_viewpoints_ViewpointsList__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_viewpoints_ViewpointsList__WEBPACK_IMPORTED_MODULE_2__["default"], {
       viewpoints: favContext.favorites
     });
   }
@@ -12497,7 +12489,7 @@ function NewViewpointPage() {
     axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/v1/newViewpoint', viewpointData).then(function () {
       navigate('/', {
         replace: true
-      }); // this directs us to the root of the app after we submit the form.
+      });
     })["catch"](function (error) {
       return console.log(error);
     });
@@ -12542,7 +12534,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var fetchedFavorites = [];
 var FavoritesContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
   favorites: [],
   totalFavorites: 0,
@@ -12573,10 +12564,6 @@ function FavoritesContextProvider(props) {
   }
 
   function removeFavHandler(favID) {
-    // setUserFavorites((prevFav) => {
-    //     return prevFav.filter(eachFav => eachFav.id !== favID)
-    // })
-    // console.log(favID)
     axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("/api/v1/favorites/".concat(favID)).then(axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/v1/favorites').then(function (results) {
       setUserFavorites(results.data);
     }))["catch"](function (error) {
@@ -13722,7 +13709,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _store_favorites_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/favorites-context */ "./src/store/favorites-context.js");
-
 
 
 
