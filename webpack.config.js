@@ -1,5 +1,4 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -9,7 +8,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    // publicPath: '/'
   },
   module: {
     rules: [
@@ -28,14 +26,5 @@ module.exports = {
       }
 
     ]
-  },
-  // devServer: {
-  //   historyApiFallback: true,
-  // },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: 'public/index.html'
-  //   })
-  // ]
-
+  }
 };
